@@ -1,6 +1,6 @@
 # React props converter
 
-```jsx harmony
+```jsx
 // component.js
 import React from 'react';
 import createConverter from 'react-props-converter';
@@ -19,6 +19,6 @@ const converter = createConverter(props => ({ value: parseInt(props.value, 16) }
 export default converter(Component); 
 ```
 
-```jsx harmony
+```jsx
 <Wrapped value="FF" /> // will be rendered as <div>255</div>
 ```
